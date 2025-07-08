@@ -63,3 +63,68 @@ print(m)
 n=30
 n/=3
 print(n)
+
+#data types
+#basic data types
+#integer, float, string, boolean
+#type() function used to return type of the value
+a=10
+b=1.2
+# t=type(a)
+# print(t)
+n="hi"
+bl=True
+bl2=False
+print(type(a))
+print(type(b))
+print(type(n))
+print(type(bl))
+
+#type conversion
+#int(), float() functions
+#int() used to convert data to integer
+s1="20"
+print(type(s1))
+print(int(s1)+5)
+i=int(s1)
+print(type(i),i,type(s1),s1)
+s2="1.1"
+s3="hi"
+# i2=int(s3)
+f=float(s2)
+print(type(f))
+print(i+f)
+print(s1+s2)
+
+
+# Comparison(or relational) operators
+# >,<,>=,<=,==,!=
+print(2>3)
+print(2<3)
+print(2>=3)
+print(2<=3)
+print(2==2)
+print(2!=3)
+r=2>3
+print(r)
+print(type(r))
+
+#logical operators
+# and, or, not
+print(True and True)
+print(True and False)
+print(False and True)
+print(False and False)
+print("------------------")
+print(True or True)
+print(True or False)
+print(False or True)
+print(False or False)
+print("------------------")
+print(not True)
+print(not False)
+
+age=17
+salary=30000
+print(age>=18 and salary>=25000)
+
