@@ -1,3 +1,44 @@
+# STRING METHODS EXPLANATIONS WITH EXAMPLES
+
+# 1. split()
+# Used to split a string into a list based on a delimiter (default is space)
+text = "apple,banana,cherry"
+print("Original String:", text)
+print("After split():", text.split(","))  # ['apple', 'banana', 'cherry']
+
+# 2. strip()
+# Removes whitespace from the beginning and end of a string
+s = "   Hello World!   "
+print("Original with spaces:", repr(s))
+print("After strip():", repr(s.strip()))  # 'Hello World!'
+
+# 3. replace()
+# Replaces all occurrences of a substring with another string
+s2 = "I like Python. Python is easy."
+print("Original:", s2)
+print("After replace():", s2.replace("Python", "Java"))  # 'I like Java. Java is easy.'
+
+print("\n" + "-"*40 + "\n")
+
+# LIST METHODS EXPLANATIONS WITH EXAMPLES
+
+# 4. append()
+# Adds an element to the end of the list
+fruits = ["apple", "banana"]
+fruits.append("cherry")
+print("After append('cherry'):", fruits)  # ['apple', 'banana', 'cherry']
+
+# 5. insert()
+# Inserts an element at a specific index
+fruits.insert(1, "orange")
+print("After insert(1, 'orange'):", fruits)  # ['apple', 'orange', 'banana', 'cherry']
+
+# 6. remove()
+# Removes the first occurrence of the specified value
+fruits.remove("banana")
+print("After remove('banana'):", fruits)  # ['apple', 'orange', 'cherry']
+
+
 # STRING METHODS
 s = " Hello, Python! "
 
