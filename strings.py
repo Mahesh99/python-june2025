@@ -206,3 +206,61 @@ print(mn,mx,sm)
 l2=["seperate","all","list","strings","with","specified","string"]
 sent=" ".join(l2)
 print(sent)
+
+# list
+# list methods
+# append, pop, remove, insert, 
+
+# tuple
+t=(1,2,3,4)
+dimens = 10,20,15
+print(dimens[1])
+print(t[3])
+marks=[10,20,15,17,18]
+
+s={7,8,10,1,1,2,3,4,4,5}
+print(s)
+
+fav_actors = ["Prabhas","Shruthi Haasan","Naani","Ram Charan","Prabhas","Nivedha Thomas","Naani",
+                   "Ram Charan","Rakul Preeth","Samantha","Rakul Preeth","Prabhas","Samantha",
+                  "Nivedha Thomas","Naaga chaithanya","Salman khan","Salman khan","Vijay","Shradha kapoor","Vijay",
+                  "Shruthi Haasan","Naani","Ram Charan","Prabhas","Nivedha Thomas","Naaga chaithanya","Salman khan"]
+print(len(fav_actors))
+fas=set(fav_actors)
+print(fas)
+print(len(fas))
+favlist=list(fas)
+print(favlist)
+
+# list(), tuple(), set()
+# int(), float(), str()
+
+# set methods
+# union(), intersection(), issuperset(), issubset()
+a={1,1,2,3,4}
+b={3,4,5,6}
+c={1,2,3}
+print(a.union(b))
+print(a.intersection(b))
+print(c.issubset(a))
+print(a.issuperset(c))
+
+# dictionary
+d={'a':1,'b':2,'c':3}
+print(len(d))
+print(d['c'])
+d['c']=4
+print(d)
+
+el=[]
+et=()
+es=set()
+ed={}
+print(type(ed),type(es))
+
+marks=[10,20,15,17,18]
+print(10 in marks)
+print(1 not in marks)
+
+print(1 in d)
+print('a' in d)
