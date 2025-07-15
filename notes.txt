@@ -1,0 +1,27 @@
+programming
+giving instruction to computer to perform a specific task
+it understands only machine language
+0 and 1
+3mb
+1kb->1 kilobytes -> 1000bytes
+1 byte -> 8 bits
+1 bit can be 0 or 1
+
+developer <-> python <-> machine
+
+
+010101010000 10010101 0100101
+
+print("hello")
+print(1+4)
+
+python - it is high level general purpose programming language
+
+download python
+vs code
+
+
+Comments
+there are 2 types of Comments
+1. single line(#)
+2. multi-line (""" or ''')
