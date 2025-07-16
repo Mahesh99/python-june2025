@@ -264,3 +264,80 @@ print(1 not in marks)
 
 print(1 in d)
 print('a' in d)
+
+print()
+a=1
+b=1
+c=2
+d=2
+e='hi'
+f='hello'
+g=f
+print(g is f)
+print(g is not f)
+l=[1,2,3,4]
+k=[1,2,3,4]
+print(l is k)
+n=k
+k.append(5)
+print(n)
+z=k.copy()
+print(z is k)
+
+d={'a':1,'b':2}
+print(d.keys())
+print(d.values())
+print(d.items())
+keys=list(d.keys())
+print(keys)
+d['d']=5
+d.update({'e':6,'f':7})
+print(d)
+
+# print(d['c'])
+print(d.get('c'))
+print(d.get('c',100))
+# None is a keyword
+# used to represent nothing
+
+class_marks = {
+    "Arun":{
+        "Hindi":78,
+        "English":89,
+        "Maths":90,
+        "Science":90
+    },
+    "Smitha":{
+        "Hindi":56,
+        "English":80,
+        "Maths":92,
+        "Science":94
+    },
+    "Naveen":{
+        "Hindi":80,
+        "English":89,
+        "Maths":90,
+        "Science":90
+    }
+}
+print(class_marks['Naveen']['English'])
+print(class_marks['Smitha']['Maths'])
+
+employees = [{
+                "name":"Sravan",
+                "age":25,
+                "salary":30000
+             },
+             {
+                "name":"Rahul",
+                "age":27,
+                "salary":32000
+             },
+             {
+                "name":"Keerthana",
+                "age":23,
+                "salary":35000
+             }
+            ]
+print(employees[1])
+print(employees[1]['salary'])
