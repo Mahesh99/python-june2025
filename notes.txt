@@ -7,7 +7,7 @@ it understands only machine language
 1 byte -> 8 bits
 1 bit can be 0 or 1
 
-developer <-> python <-> machine
+code file <-> python <-> machine
 
 
 010101010000 10010101 0100101
