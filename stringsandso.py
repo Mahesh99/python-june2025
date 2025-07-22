@@ -217,3 +217,136 @@ print(number%2==0)
 # 5%2=1
 # 6%2=0
 # 7%2=1
+
+print(dir(list))
+
+# TUPLE
+# list is a immutable ordered sequence of elements
+#They are similar to lists in the way they are created and accessed.
+# Tuples are created using parenthesis - ()
+# Tuples are mainly used when you have values which are closely related and their position matters
+t=(1,2,3,4,5)
+t2=()
+t3=1,2,3,4,5
+print(t,t2,t3)
+print(type(t))
+print(t[1])
+print(dir(tuple))
+print(t.index(2))
+# print(t.index(20))
+
+#SET
+# Set is a mutable unordered collection of unique elements
+# Set is created using curly braces - {}
+s={1,2,3,4,5,1,2,3}
+s2=set()
+print(s)
+print(type(s))
+s.add(6)
+print(s)
+print(dir(set))
+s.remove(1)
+print(s)
+help(set.pop)
+fav_actors = ["Prabhas","Shruthi Haasan","Naani","Ram Charan","Prabhas","Nivedha Thomas","Naani",
+                   "Ram Charan","Rakul Preeth","Samantha","Rakul Preeth","Prabhas","Samantha",
+                  "Nivedha Thomas","Naaga chaithanya","Salman khan","Salman khan","Vijay","Shradha kapoor","Vijay",
+                  "Shruthi Haasan","Naani","Ram Charan","Prabhas","Nivedha Thomas","Naaga chaithanya","Salman khan"]
+
+print(len(fav_actors))
+# type conversion functions
+# list(), tuple(), set()
+fa=set(fav_actors)
+print(len(fa))
+fal=list(fa)
+print(fal)
+
+# s1={}
+# s2={}
+# s3=s1.union(s2)
+# s4=s1.intersection(s2)
+
+# print(s1.issubset(s3))
+# print(s3.issuperset(s1))
+
+
+# IDENTITY OPERATORS
+# is, is not
+
+# literal
+# literal pool
+a=1
+b=1
+c=2
+d=c
+e="hi"
+f="hi"
+print(a is b)
+print(a is c)
+print(a is not c)
+
+l=[1,2,3,4,5]
+l2=[1,2,3,4,5]
+print(l is l2)
+l3=l
+print(l is l3)
+l.append(6)
+print(l3)
+
+
+# DICTIONARY
+std={"name":"sam","age":20,"rollno":1252,"class":9}
+# std={"name":"sam","age":20,"rollno":1252,"class":9,"class":10}
+
+print(std)
+print(type(std))
+
+# accessing
+print(std["name"])
+print(std["rollno"])
+
+#update/modify
+std["rollno"]=1250
+print(std)
+print("name" in std)
+print(1250 in std)
+
+# adding a new key value pair
+std["section"]='A'
+print(std)
+print(dir(dict))
+
+std.update({"address":"uppal"})
+print(std)
+
+print(std.values())
+print(std.keys())
+print(std.items())
+
+l=[1,2,3,4,[10,20,30]]
+print(l[4][2])
+
+v=list(std.values())
+print(v)
+
+# get()
+print(std["name"])
+# print(std["marks"]) #error
+print(std.get("name"))
+print(std.get("name","Name not available"))
+print(std.get("marks"))
+print(std.get("marks","Not available"))
+
+
+# nested dicitionary
+std={"name":"sam",
+     "age":20,
+     "rollno":1252,
+     "class":9,
+     "address":{"hno":"2-2-10","area":"nehru nagar","town":"hyd","pincode":500013}
+     }
+print(std["address"]["pincode"])
+
+students=[{"name":"sam","age":20},{"name":"hari","age":21},{"name":"raj","age":22}]
+print(students[2])
+print(students[2]["age"])
