@@ -1,0 +1,22 @@
+Programming - it is giving instructions to computers to perform some task
+Python Programming -  it is a general purpose high level Programming language
+high level - human readable
+
+computer can only understand Machine language
+Machine language - binary - 010101010001101
+
+developer <-> python <-> machine
+
+Python installation
+- download python
+- download vs code
+
+Notes
+- github.com/mahesh99
+
+program files should end with .py
+
+
+Comments
+1. single line - #
+2. multi line - """ or '''
