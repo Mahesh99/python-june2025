@@ -1,0 +1,39 @@
+Exercise:1
+Create a class Book with variables: title, author, price, publisher
+3 Methods:
+display_details() — to print all book details
+apply_discount(percent) — to reduce price by given percent and show new price
+is_expensive() — if price > 500, print "This is an expensive book." else "This is an affordable book."
+
+
+Exercise:2
+Create a class called BankAccount with variables: account_holder, balance
+3 Methods:
+display_account() — to print account holder name and current balance
+deposit(amount) — to add amount to balance and print updated balance
+withdraw(amount) — if balance is enough, deduct and print updated balance; else print "Insufficient Balance"
+
+
+Exercise:3
+Create a class called Greetings with two static methods:
+
+ say_hello(name) → This method should print:
+Hello, <name>! Welcome to Python class.
+say_goodbye(name) → This method should print:
+Goodbye, <name>! See you soon.
+
+Use @staticmethod for both methods.
+Call both methods directly using the class name.(No need to create any object)
+
+
+Exercise - 4
+Create a class Animal with:
+A variable --> name
+A method sound() that prints:"{name} makes some sound."
+
+Create two classes Dog and Cat that inherit from Animal.
+In Dog, override sound() to print:"{name} barks."
+In Cat, override sound() to print:"{name} meows."
+
+Create objects for all three classes.
+Call the sound() method for each.
