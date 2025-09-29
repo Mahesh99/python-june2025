@@ -47,17 +47,17 @@
 
 # print()
 # print()
-print("Code before try and catch")
-try:
-    z=10/2
-    temp = "23c"
-    print(int(temp))
-except NameError as e:
-    print("Name error occured:",e)
-except ValueError as ve:
-    print(ve)
-except Exception:
-    print("Some error occured")
+# print("Code before try and catch")
+# try:
+#     z=10/2
+#     temp = "23c"
+#     print(int(temp))
+# except NameError as e:
+#     print("Name error occured:",e)
+# except ValueError as ve:
+#     print(ve)
+# except Exception:
+#     print("Some error occured")
 
 
 # class Emp:
@@ -66,6 +66,68 @@ except Exception:
 
 # e=Emp("Charan")
 # e1="hi"
-# print(e.name)
+# print(e)
 # print(isinstance(e1,Emp))
 # print(type(e))
+
+
+# try:
+#     f=open("oops.py")
+#     print(f.readlines()[400])
+# except IndexError:
+#     print("Some error occured")
+# finally:
+#     f.close()
+#     print("Finally code will be executed always")
+
+
+# nested try except
+
+# try: 
+#     l=[1,2,3]
+#     print(l[0])
+#     try:
+#         k=1/0
+#     except TypeError:
+#         print("ZD error occured")
+
+# except (IndexError,ZeroDivisionError):
+#     print("Index/ZD error occured")
+
+
+
+
+
+# Error occured in a function definition if not handled will be passed to function call
+
+def func2():    
+    print(f"Hello{j}")
+
+
+def func1():
+    try:
+        # n=int(input("Enter a number:"))
+        n=19
+        print(f"Number entered is {n}")
+        func2()
+        
+    except ValueError:
+        print("Value error occured")
+
+try:
+    func1()
+except ValueError:
+    print("Name error occured")
+
+# stack trace
+"""
+Traceback (most recent call last):
+  File "c:\Users\Admin\OneDrive\Desktop\New folder\errorsnexceptions.py", line 118, in <module>
+    func1()
+    ~~~~~^^
+  File "c:\Users\Admin\OneDrive\Desktop\New folder\errorsnexceptions.py", line 112, in func1    func2()
+    ~~~~~^^
+  File "c:\Users\Admin\OneDrive\Desktop\New folder\errorsnexceptions.py", line 104, in func2    print(f"Hello{j}")
+                  ^
+NameError: name 'j' is not defined
+"""
