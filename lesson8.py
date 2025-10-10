@@ -8,6 +8,7 @@ import threading
 
 # print_cube(10)
 
+"""
 g=10
 
 def myfunc(name):
@@ -32,7 +33,7 @@ t4.start()
 t5=threading.Thread(target=myfunc,args=(5,))
 t5.start()
 print("Hi this is a main thread")
-
+"""
 
 # we can't use threads everytime
 # we can only use them in i/o bound tasks
@@ -47,3 +48,47 @@ print("Hi this is a main thread")
 # using threads is preferred for i/o intense operations
 #input devices: keyboard, mouse, scanner
 #output devices: monitor, printer
+
+
+"""
+def print_nums(n):
+    for i in range(1,n+1):
+        print(i)
+        time.sleep(1)
+
+
+t=threading.Thread(target=print_nums,args=(5,))
+t.start()
+t2=threading.Thread(target=print_nums,args=(10,))
+t2.start()
+t.join()
+t2.join()
+print("This is main thread")
+"""
+# race condition
+counter=0
+lock=threading.Lock()
+
+def increment():
+    global counter
+    print("increment")
+    for _ in range(1000):
+        lock.acquire()
+        counter+=1
+        lock.release()
+
+# def decrement():
+#     print("decrement")
+#     global counter
+#     for _ in range(1000):
+#         counter-=1
+
+# increment()
+# print(counter)
+t=threading.Thread(target=increment)
+t.start()
+t2=threading.Thread(target=increment)
+t2.start()
+t.join()
+t2.join()
+print(counter)
